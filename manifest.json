@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "YT Speed Remote",
+  "description": "Change PlayBack Speed on Youtube Made By Shashank Bhutiya",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "001_extensions.png"
+  },
+  "content_scripts" : [ {
+		"js" : ["popup.js"],
+		"matches" : [
+		      "https://*/",
+          "https://www.youtube.com/*",
+        	"https://developer.chrome.com/docs/webstore/*"
+			]
+	    }
+    ]
+}
